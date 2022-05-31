@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body,
+	html {
+		@apply h-full bg-gray-100;
+	}
+}
+#root {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.book-cards {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+.lds-dual-ring {
+	display: inline-block;
+}
+.lds-dual-ring:after {
+	content: ' ';
+	display: block;
+	width: 24px;
+	height: 24px;
+	margin: 4px;
+	border-radius: 50%;
+	border: 2px solid #2464eb;
+	border-color: #2464eb transparent #2464eb transparent;
+	animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
