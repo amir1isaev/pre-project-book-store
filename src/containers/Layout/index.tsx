@@ -5,7 +5,7 @@ import Modal from 'components/modal/Modal'
 import Provider from 'containers/Provider'
 import { FC, ReactNode } from 'react'
 import { ToastContainer } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
+// import 'react-toastify/dist/ReactToastify.css'
 
 const Layout: FC<IProps> = ({ children }) => {
 	return (
